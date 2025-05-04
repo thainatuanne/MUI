@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+# 💻 Atividade Prática - Aplicação com MUI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como parte de uma atividade prática com React, TypeScript e Material UI (MUI). A proposta consistia em criar uma aplicação contendo ao menos um `Modal` e mais três componentes do MUI, com foco em organização, layout e criatividade.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✅ Objetivo da Atividade
 
-## Expanding the ESLint configuration
+Desenvolver uma aplicação com os seguintes requisitos:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Criada com React + TypeScript
+- Estilizada com **Material UI (MUI)**
+- Utilizando **pelo menos 4 componentes**:
+  - Modal
+  - Tooltip
+  - Card
+  - List
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Componentes Utilizados
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- `AppBar`: barra de navegação superior
+- `Tooltip`: dica flutuante no botão de ação
+- `Modal`: janela flutuante com informações
+- `Card`: cartão com borda sutil e descrição
+- `List`: listagem de itens com descrição
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+# Clone o repositório
+git clone https://github.com/thainatuanne/MUI.git
+
+# Acesse o diretório
+cd mui-user-modal
+
+# Instale as dependências
+npm install
+
+# Inicie o projeto
+npm run dev
